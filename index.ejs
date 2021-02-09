@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+  <div>
+    <h1 id="goUp"></h1>
+    <a href="/"><img src="logo.png" alt="logo" width="70" height="50"></a>
+  </div>
+  <div class="grid-container" >
+    
+  <div>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Home</a>
+       
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/complaints">Make a complaint</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/data">View Data</a>
+            </li>
+          </ul>
+       </div>
+    </nav> 
+  </div>
+
+    <div id="divGrid">
+      <div style="color: rgb(139, 109, 56);">
+        Dalbergia Commercial Realty <br>
+        DC Realty provides connected real estate services for clients in almost any market worldwide.
+        <br>
+        Whatever the property or service need, our specialists are committed to your needs. Merging business and unmatched experience, Dalbergia brokers are well-equipped to exceed your business goals.
+        <br>
+      </div>
+      <!-- profile grid -->
+      <div id="productGrid">
+        <section id="picDiv">
+            <section id="gallerySelection">
+              <div class="container">
+                  <img src="op.png" alt="1st test" style="width:100%" class="image">
+                  <div class="overlay">
+                      <div class="text">OFFICE</div>
+                      <div>
+                        <button id="myBtn">Buy</button>
+                        <!-- . -->
+                        <div id="myModal" class="modal">
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Commercial landlord and tenants can rely on KW Commercial real estate professionals to have intimate knowledge of the local office market and existing tenant base in order to successfully negotiate office projects. <br> Our results-driven core office services include:
+                              <br> Tenant representation
+                              <br> Landlord representation
+                              <br> Buyer representation
+                              <br> Seller representation</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                  <img src="ip.png" alt="1st test" style="width:100%" class="image">
+                  <div class="overlay">
+                      <div class="text">INDUSTRIAL</div>
+                      <div>
+                        <button id="myBtn2">Buy</button>
+                          <!-- The Modal -->
+                            <div id="myModal2" class="modal2">
+                          <!-- Modal content -->
+                            <div class="modal-content2">
+                              <span class="close2">&times;</span>
+                                <p>The Dalbergia specialists provide best-in-class service to all of our clients. These include: <br>
+                                  <br> Selection and acquisition of land
+                                  <br> Build-to-suit analysis and planning services
+                                  <br> Acquisition and disposition of buildings
+                                  <br> Incentive negotiations
+                                  <br> Investment sales
+                                  <br> Tenant/buyer representation
+                                  <br> Sale/leaseback based on market knowledge and trends</p>
+                          </div>
+                         </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="container">
+                <img src="rp.png" alt="1st test" style="width:100%" class="image">
+                <div class="overlay">
+                    <div class="text">RETAIL</div>
+                    <div>
+                      <button id="myBtn3">Buy</button>
+                          <!-- The Modal -->
+                            <div id="myModal3" class="modal3">
+                          <!-- Modal content -->
+                            <div class="modal-content3">
+                              <span class="close3">&times;</span>
+                                <p>Whether you're an investor, landlord or tenant, our commercial real estate professionals provide local market knowledge with national and international exposure to assist buyers in making informed decisions that benefit your bottom line. Our retail core services include: <br>
+                                  <br> Market surveys, demographics and analysis
+                                  <br> Acquisitions
+                                  <br> Consulting
+                                  <br> Landlord representation
+                                  <br> Property Management</p>
+                          </div>
+                         </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+             </section>
+          </section>
+      <!-- profile card -->
+      <div id="profileCardGrid" >
+        <div>
+          <!-- Creator -->
+        </div>
+            <img src="Screenshot_20210209-041100_Photos.jpg" alt="Picture of Creator" style="border-style: solid;" width="200px">
+            <div>
+              <h4>Ted Sengretsi</h4>
+              <h4>10180200220</h4>
+            </div>
+          </div>
+      </div>
+    </div>
+    Do you a problem?<a class="nav-link" href="/complaints">Click here to inform us</a>
+
+    <div>
+      <footer style="text-align: center;">
+        ...
+      </footer>
+    </div>
+  </div>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal2 = document.getElementById("myModal2");
+// Get the button that opens the modal
+var btn2 = document.getElementById("myBtn2");
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal 
+btn2.onclick = function() {
+  modal2.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+// Get the modal
+var modal3 = document.getElementById("myModal3");
+// Get the button that opens the modal
+var btn3 = document.getElementById("myBtn3");
+// Get the <span> element that closes the modal
+var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal 
+btn3.onclick = function() {
+  modal3.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span3.onclick = function() {
+  modal3.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event3.target == modal3) {
+    modal3.style.display = "none";
+  }
+}
+    </script>
+    
+</body>
+
+</html>
